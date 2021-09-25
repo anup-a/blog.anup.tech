@@ -33,13 +33,15 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => {
         width: "100%",
         mb: 4,
         flexWrap: "nowrap",
+        flexDirection: ["column-reverse", "row", "row"],
       }}
     >
       <Box
         mb={4}
         sx={{
-          maxWidth: "70%",
-          mr: 4,
+          maxWidth: ["100%", "70%", "70%"],
+          mr: [0, 0, 4],
+          mt: [4, 0, 0],
           display: "flex",
           flexDirection: "column",
         }}
@@ -49,7 +51,7 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => {
           //@ts-ignore
           to={post.slug}
           sx={{
-            fontSize: [0, 1, 3],
+            fontSize: [2, 2, 3],
             color: `text`,
             fontWeight: "semibold",
             textOverflow: "ellipsis",
@@ -90,7 +92,11 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => {
         <GatsbyImage
           image={bannerImg}
           alt=""
-          sx={{ maxWidth: "30%", height: "150px", borderRadius: 6 }}
+          sx={{
+            maxWidth: ["100%", "30%", "30%"],
+            height: ["150px", "150px", "150px"],
+            borderRadius: 6,
+          }}
         />
       )}
     </Flex>

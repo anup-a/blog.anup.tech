@@ -17,9 +17,10 @@ const Footer = () => {
         },
         flexDirection: [`column`, `column`, `row`],
         variant: `dividers.top`,
+        fontSize: [1],
       }}
     >
-      <div>
+      <div sx={{}}>
         &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
       </div>
       <div>

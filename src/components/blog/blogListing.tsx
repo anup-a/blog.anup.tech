@@ -33,7 +33,7 @@ const BlogListing = ({
     <section
       sx={{
         mb: [4, 4, 6],
-        px: [5],
+        px: [3, 5, 5],
         py: [5],
         backgroundColor: isDark ? `#1A202C9a` : "#ffffff9d",
       }}

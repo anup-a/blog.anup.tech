@@ -11,7 +11,9 @@ const HeaderLinks = (props: Props) => {
   return (
     <Fragment>
       {externalLinks && externalLinks.length > 0 && (
-        <div sx={{ "a:not(:first-of-type)": { ml: 3 }, fontSize: [1, `18px`] }}>
+        <div
+          sx={{ "a:not(:first-of-type)": { ml: 3 }, fontSize: [0, 1, `18px`] }}
+        >
           {externalLinks.map(link => (
             <TLink key={link.url} href={link.url}>
               {link.name}

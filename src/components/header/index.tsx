@@ -31,7 +31,7 @@ const Header = (props: Props) => {
             sx={{
               display: `flex`,
               mt: 1,
-              mr: 4,
+              mr: [2, 4, 4],
               color: `secondary`,
               a: { color: `secondary`, ":hover": { color: `heading` } },
             }}
