@@ -22,7 +22,7 @@ export const query = graphql`
             src
           }
           gatsbyImageData(
-            quality: 50
+            quality: 100
             transformOptions: { cropFocus: CENTER }
             width: 1024
           )

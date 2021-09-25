@@ -185,7 +185,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     withDefaults(blogConfig)
 
   createPage({
-    path: `/${basePath}/${blogPath}`.replace(/\/\/+/g, `/`),
+    path: `/${basePath}`.replace(/\/\/+/g, `/`),
     component: blogTemplate,
     context: {
       formatString,

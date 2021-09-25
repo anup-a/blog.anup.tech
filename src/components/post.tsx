@@ -86,7 +86,6 @@ export default function BlogPost({ data: { post } }: Props) {
               my: 5,
               ".gatsby-resp-image-wrapper": {
                 my: [4, 4, 5],
-                boxShadow: shadow.join(`, `),
               },
               variant: `layout.content`,
               fontFamily: `IBM plex sans`,

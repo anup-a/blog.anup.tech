@@ -91,6 +91,17 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-figure-caption`,
+            options: { figureClassName: "md-figure" },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
