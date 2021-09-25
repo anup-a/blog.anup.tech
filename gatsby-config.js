@@ -35,14 +35,6 @@ module.exports = {
       },
     },
     {
-      //  Fetch blog markdown files and create file nodes
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: `${__dirname}/src/pages/`,
-      },
-    },
-    {
       // Add custom fonts to gatbsy
       resolve: `gatsby-omni-font-loader`,
       options: {
