@@ -27,7 +27,6 @@ type Props = {
 
 const Blog = ({ data }: Props) => {
   const posts = data.allPost.nodes
-  console.log(posts)
 
   return (
     <Layout>

@@ -21,7 +21,6 @@ const mdHTMLResolver =
     const mdNode = context.nodeModel.getNodeById({
       id: source.parent,
     })
-    console.log(type.getFields()[fieldName])
     const resolver = type.getFields()[fieldName].resolve
     const result = await resolver(mdNode, args, context, {
       fieldName,
@@ -32,13 +31,6 @@ const mdHTMLResolver =
         ? result[subfield]
         : ""
       : result
-
-    console.log(
-      "🚀 ~ file: gatsby-node.js ~ line 30 ~ resolvedObject",
-      fieldName,
-      subfield,
-      resolvedObject
-    )
 
     return resolvedObject
   }
