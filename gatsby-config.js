@@ -19,14 +19,6 @@ module.exports = {
   },
   plugins: [
     {
-      // Using this plugin to fetch images from file system into gatsby's data layer to effectively load inside web pages
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/src/images/`,
-      },
-    },
-    {
       //  Fetch blog markdown files and create file nodes
       resolve: "gatsby-source-filesystem",
       options: {
