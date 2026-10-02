@@ -3,8 +3,8 @@ module.exports = {
   navigation: [],
   externalLinks: [
     {
-      name: `Uxie.io`,
-      url: `https://uxie.io`,
+      name: `Uxie`,
+      url: `https://github.com/uxie-io`,
     },
     {
       name: `Twitter`,
